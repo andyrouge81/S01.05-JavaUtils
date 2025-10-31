@@ -18,7 +18,7 @@
 
 ---
 
-##  ⚙️  Instructions for use the exercises at `terminal`in macOS or  `bash` im windows read the `readmeExercises.txt`
+##  ⚙️  Instructions for use the exercises at `terminal`in macOS or  `bash` in Windows read the `readmeExercises.txt`
 
 ---
 ## 🧪 Exercises
