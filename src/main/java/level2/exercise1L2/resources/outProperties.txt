@@ -1,9 +1,0 @@
-   F : .DS_Store Sun Oct 26 13:11:20 CET 2025
-  D:configLoader Sun Oct 26 11:42:29 CET 2025
-     F : ConfigLoader.java Sun Oct 26 11:42:29 CET 2025
-  D:directoryWriter Sun Oct 26 12:06:41 CET 2025
-     F : DirectoryWriter.java Sun Oct 26 12:06:41 CET 2025
-  D:main Sun Oct 26 12:34:28 CET 2025
-     F : Main.java Sun Oct 26 12:34:28 CET 2025
-  D:resources Sun Oct 26 12:34:10 CET 2025
-     F : outProperties.txt Sun Oct 26 13:11:54 CET 2025

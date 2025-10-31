@@ -95,12 +95,12 @@ You should parametrize:
 1. Clone the repository:
 
     ```bash
-      git clone https://github.com/your-username/S1.05-JavaUtils.git
+      git clone https://github.com/andyrouge81/S1.05-JavaUtils.git
 
 2. Navigate into the project directory:
 
    ```bash
-   cd S1.05-JavaUtils
+   cd S01.05-JavaUtils/src
 
 3. Open the project with your favorite IDE (IntelliJ, Eclipse, etc.)
 
@@ -122,7 +122,7 @@ For example:
 For parametric execution (Level 2):
   
       javac -d out src/main/java/level2/exercise1L2/**/*.java
-      java -cp out:src/main/resources level2.exercise1L2.main.Main
+      java -cp out:src/main/resources level2.exercise1.main.Main
 
 Ensure that `config.properties` is inside the `resources` folder.
 

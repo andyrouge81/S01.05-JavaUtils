@@ -1,4 +1,31 @@
+
 📘 Instructions for Compiling and Running Java Exercises (via Terminal)
+
+Ones you are cloned the repository the directory path goes: 
+
+	- cd src/main/java/level1
+
+Then you can go throw to the 5 different exercises of level1 and one exercise of level2. Enjoy!!
+
+
+1. To access each exercise: cd exercise(1,2,3,4,5), example: - cd exercise3 
+
+2. To compile and run the exercises you have a 'test' folder inside the resources folder.
+	
+	- You can access:
+
+		cd src/main/resources/test
+
+	- Copy the path with your SO system and proof the exercise in a Terminal
+		
+		cd src/main/java/level1
+		
+		Complile: javac SortedDirectoryList.java
+		
+		Run: java SortedDirectoryList.java pathDirectory(by default: /S01.05-JavaUtils/src/main/resources/test
+
+
+
 
 ==============================================
 🛠️ COMPILING JAVA FILES (.java → .class)
@@ -15,74 +42,144 @@ If the exercise contains multiple Java files (classes, interfaces, etc.), you ca
 
 - javac src/exercise1/*.java
 
-==============================================
-▶️ RUNNING A JAVA PROGRAM (.class)
 
-Once compiled, to run a Java program:
-
-- java path.to.YourClass
-
-✅ Example:
-
-- java exercise1.NoGenericMethodsMain
-
-⚠️ Make sure you are in the root directory of the project when executing these commands (where the src/ folder is).
 
 ==============================================
 📂 PATH DIRECTORY EXAMPLE
 
-TascaS105JavaUtils/
-├── pom.xml
+S01.05-JavaUtils/
+├── .idea/
+├── .mvn/
+├── out/
 ├── src/
-│ └── main/
-│ ├── java/
-│ │ └── level2/
-│ │ └── exercise1L2/
-│ │ ├── main/
-│ │ │ └── Main.java ✅
-│ │ ├── configLoader/
-│ │ │ └── ConfigLoader.java
-│ │ └── directoryWriter/
-│ │ └── DirectoryWriter.java
-│ └── resources/
-│ └── config.properties ✅
+│   ├── main/
+│   │   ├── java/
+│   │   │   ├── level1/
+│   │   │   │   ├── exercise1/
+│   │   │   │   ├── exercise2/
+│   │   │   │   ├── exercise3/
+│   │   │   │   ├── exercise4/
+│   │   │   │   └── exercise5/
+│   │   │   └── level2.exercise1/
+│   │   │       ├── configLoader/
+│   │   │       ├── directoryWriter/
+│   │   │       ├── main/
+│   │   │       └── resources/
+│   │   └── resources/
+│   │       ├── test/
+│   │       └── config.properties
+│   └── test/
+├── target/
+├── .gitignore
+├── pom.xml
+├── README.md
+└── readme.txt
+
 
 ==============================================
 📗 EXERCISES INSTRUCTIONS
 
 LEVEL 1
 
+* Put inside the directory with this path, copy/paste	
+
+	- cd S01.05-JavaUtils/src/main/java/leve1
+
+
 🔹 Exercise 1 – Sorted Directory Listing
-Compile: javac src/exercise1L1/SortedDirectoryList.java
-Run: java exercise1L1.SortedDirectoryList /path/to/directory
+
+1.  To access the exercise1 directory:
+
+	- cd S01.05-JavaUtils/src/main/java/level1/exercise1
+
+2. Compile: 
+
+	- javac SortedDirectoryList.java 
+
+3. Run: 
+
+	- java SortedDirectoryList.java /path/to/directory ( by default: /src/main/resources/test)
 
 🔹 Exercise 2 – Recursive Directory Listing
-Compile: javac src/exercise1L1/SortedDirectoryRecursive.java
-Run: java exercise1L1.SortedDirectoryRecursive /path/to/directory
+
+1.  To access the exercise2 directory:
+
+	- cd S01.05-JavaUtils/src/main/java/level1/exercise2
+
+2. Compile: 
+
+	- javac SortedDirectoryRecursive.java
+
+3. Run: java SortedDirectoryRecursive.java /path/to/directory (by default: /src/main/resources/test)
+
 
 🔹 Exercise 3 – Recursive Directory Listing to File
-Compile: javac src/exercise1L1/RecursiveWriteFile.java
-Run: java exercise1L1.RecursiveWriteFile /path/to/directory
+
+1. To access the exercise3 directory :
+
+	- cd S01.05-JavaUtils/src/main/java/level1/exercise3
+
+2. Compile: 
+
+	- javac RecursiveWriteFile.java
+
+3 .Run: 
+
+	- java RecursiveWriteFile.java /path/to/directory (by default: /src/main/resources/test)
+
 
 🔹 Exercise 4 – Read a .txt File
-Compile: javac src/exercise1L1/ReadTxtFile.java
-Run: java exercise1L1.ReadTxtFile /path/to/file.txt
+
+1. To access the exercise4 directory:
+
+	- cd S01.05-JavaUtils/src/main/java/level1/exercise4
+
+2. Compile: 
+
+	- javac ReadTxtFile.java
+
+3. Run: 
+
+	- java ReadTxtFile.java /path/to/file.txt (by default: /src/main/resources/sample3.txt
+
+
 
 🔹 Exercise 5 – Serialize an Object to .ser File
-Compile: javac src/exercise1L1/SerializeFile.java
-Run: java exercise1L1.SerializeFile /path/to/output.ser
+
+
+1. To access the exercise5 directory:
+
+	- cd S01.05-JavaUtils/src/main/java/level1/exercise5
+
+2. Compile: 
+
+	- javac SerializeFile.java
+
+3. Run: 
+	
+	- java SerializeFile.java /path/to/output/ (by default: /src/main/resources/test/sample3.txt)
+
+
 
 LEVEL 2
 
 🔹 Exercise 1 – Parametrize with config.properties File
-Compile:
 
-- javac -d out src/main/java/level2/exercise1L2/**/*.java
+1. To access the exercise5 directory:
+
+	- cd S01.05-JavaUtils/src/main/java/level2/exercise1
+
+
+2. Compile:
+
+
+	- javac **/*.java
+
 Run:
 
-- java -cp out:src/main/resources level2.exercise1L2.main.Main
+	java  java main/Main.java S10.05-JavaUtils/src/main/resources/config.properties
 
-⚠️ Make sure config.properties is located in src/main/resources.
+
 
 ==============================================
 📝 NOTE
