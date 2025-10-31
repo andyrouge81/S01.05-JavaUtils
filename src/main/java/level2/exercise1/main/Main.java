@@ -26,6 +26,6 @@ public class Main {
 		DirectoryWriter writer = new DirectoryWriter();
 		writer.writeDirectory(inputDirectory,outPutFile);
 
-		System.out.println("Success.");
+
 	}
 }

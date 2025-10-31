@@ -39,4 +39,5 @@ build/
 ### Mac OS ###
 .DS_Store
 ## Ide clas file ##
-.class
+*.class
+

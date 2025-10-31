@@ -14,6 +14,8 @@ Then you can go throw to the 5 different exercises of level1 and one exercise of
 	
 	- You can access:
 
+	    If you are inside of /S01.05-JavaUtils/...
+
 		cd src/main/resources/test
 
 	- Copy the path with your SO system and proof the exercise in a Terminal
@@ -98,7 +100,7 @@ LEVEL 1
 
 3. Run: 
 
-	- java SortedDirectoryList.java /path/to/directory ( by default: /src/main/resources/test)
+	- java SortedDirectoryList.java /path/to/directory ( by default: /yourPathDirectory/S01.05-JavaUtils/src/main/resources/test)
 
 🔹 Exercise 2 – Recursive Directory Listing
 
@@ -110,7 +112,7 @@ LEVEL 1
 
 	- javac SortedDirectoryRecursive.java
 
-3. Run: java SortedDirectoryRecursive.java /path/to/directory (by default: /src/main/resources/test)
+3. Run: java SortedDirectoryRecursive.java /path/to/directory (by default: /yourPathDirectory/S01.05-JavaUtils/src/main/resources/test)
 
 
 🔹 Exercise 3 – Recursive Directory Listing to File
@@ -125,7 +127,7 @@ LEVEL 1
 
 3 .Run: 
 
-	- java RecursiveWriteFile.java /path/to/directory (by default: /src/main/resources/test)
+	- java RecursiveWriteFile.java /path/to/directory (by default: /yourPathDirectory/S01.05-JavaUtils/src/main/resources/test)
 
 
 🔹 Exercise 4 – Read a .txt File
@@ -140,7 +142,7 @@ LEVEL 1
 
 3. Run: 
 
-	- java ReadTxtFile.java /path/to/file.txt (by default: /src/main/resources/sample3.txt
+	- java ReadTxtFile.java /path/to/file.txt (by default: /yourPathDirectory/S01.05-JavaUtils/src/main/resources/sample3.txt
 
 
 
@@ -157,7 +159,7 @@ LEVEL 1
 
 3. Run: 
 	
-	- java SerializeFile.java /path/to/output/ (by default: /src/main/resources/test/sample3.txt)
+	- java SerializeFile.java /path/to/output/ (by default: /yourPathDirectory/S01.05-JavaUtils/src/main/resources/test)
 
 
 
@@ -166,6 +168,9 @@ LEVEL 2
 🔹 Exercise 1 – Parametrize with config.properties File
 
 1. To access the exercise5 directory:
+
+    - In the S01.05-JavaUtils/src/main/resources/config.properties
+        edit the file and you should change your directory path, if you want how it works.
 
 	- cd S01.05-JavaUtils/src/main/java/level2/exercise1
 
@@ -177,7 +182,7 @@ LEVEL 2
 
 Run:
 
-	java  java main/Main.java S10.05-JavaUtils/src/main/resources/config.properties
+	- java  java main/Main.java yourDirectoryPath/S10.05-JavaUtils/src/main/resources/config.properties
 
 
 

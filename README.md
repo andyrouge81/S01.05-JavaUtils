@@ -18,18 +18,20 @@
 
 ---
 
+##  ⚙️  Instructions for use the exercises at `terminal`in macOS or  `bash` im windows read the `readmeExercises.txt`
+
+---
 ## 🧪 Exercises
 
 ### 🔹 Level 1
 
 <details>
-  
-### Exercise 1 
+
+### Exercise 1
 
 Create a class that receives a directory as a parameter and prints all its content in **alphabetical order** (by name).
 
-
-### Exercise 2 
+### Exercise 2
 
 Extend the previous class to list the **entire directory tree recursively**.
 
@@ -37,16 +39,15 @@ Extend the previous class to list the **entire directory tree recursively**.
 - Prefix each line with `D:` for directory or `F:` for file.
 - Also show the **last modified date** of each item.
 
-### Exercise 3 
+### Exercise 3
 
 Instead of printing the recursive directory structure to console, write it into a `.txt` file.
 
-### Exercise 4 
+### Exercise 4
 
 Add functionality to **read any `.txt` file** and print its contents to the console.
 
-
-### Exercise 5 
+### Exercise 5
 
 Serialize a Java object to a `.ser` file, then **deserialize it** to reconstruct the object.
 
@@ -57,12 +58,13 @@ Serialize a Java object to a `.ser` file, then **deserialize it** to reconstruct
 ### 🔹 Level 2
 
 <details>
-  
+
 ### Exercise 1
 
 Modify **Exercise 3 from Level 1** so that it uses a `.properties` file for configuration.
 
 You should parametrize:
+
 - The directory to be read
 - The name and path of the output `.txt` file
 
@@ -79,8 +81,6 @@ You should parametrize:
 - Git & GitHub
 - Optional: Maven for managing dependencies (e.g., Apache Commons)
 
-
-
 ## 📋 Requirements
 
 - Java SDK 17 or higher installed
@@ -88,50 +88,44 @@ You should parametrize:
 - Git installed for version control
 - If using Maven, ensure it's installed and configured
 
-
-
 ## 🛠️ Installation
 
 1. Clone the repository:
 
-    ```bash
-      git clone https://github.com/andyrouge81/S1.05-JavaUtils.git
+   ```bash
+     git clone https://github.com/andyrouge81/S1.05-JavaUtils.git
 
+   ```
 2. Navigate into the project directory:
 
    ```bash
    cd S01.05-JavaUtils/src
 
+   ```
 3. Open the project with your favorite IDE (IntelliJ, Eclipse, etc.)
-
 
 ## ▶️ Execution
 
 You can run the Java classes directly from the terminal:
-    
-     javac src/exercise1/*.java
-     java exercise1.ClassName args...
 
-
+javac src/exercise1/*.java
+java exercise1.ClassName args...
 For example:
 
-    javac src/exercise1/SortedDirectoryList.java
-    java exercise1.SortedDirectoryList /your/path/here
-
-
+javac src/exercise1/SortedDirectoryList.java
+java exercise1.SortedDirectoryList /your/path/here
 For parametric execution (Level 2):
-  
-      javac -d out src/main/java/level2/exercise1L2/**/*.java
-      java -cp out:src/main/resources level2.exercise1.main.Main
 
+javac -d out src/main/java/level2/exercise1L2/**/*.java
+java -cp out:src/main/resources level2.exercise1.main.Main
 Ensure that `config.properties` is inside the `resources` folder.
-
 
 ## 🌐 Deployment
 
 This project is for educational purposes. You can export it as a `.jar` file via your IDE if needed.
 
 ## 📄 File Structure Example
+
 ```csharp
 
 S1.05-JavaUtils/
@@ -149,6 +143,7 @@ S1.05-JavaUtils/
 ├── README.md
 └── readme.txt                  # Execution commands (CLI)
 ```
+
 🤝 Contributions
 
 1. Fork the repository.
@@ -156,14 +151,15 @@ S1.05-JavaUtils/
    ```bash
     git checkout -b feature/new-feature
 
+   ```
 3. Commit and push your changes:
-    ```bash
-    git commit -m "feat: added new feature"
-    git push origin feature/new-feature
+   ```bash
+   git commit -m "feat: added new feature"
+   git push origin feature/new-feature
 
+   ```
 4. Open a pull request.
 
 ### 💌 Contact
 
 For issues, suggestions or contributions, feel free to open an Issue or contact me via [GitHub profile](https://github.com/andyrouge81/S1.05-JavaUtils.git)
-
