@@ -6,7 +6,14 @@ public class ReadTxtFile {
 
     public static void main(String[] args) {
 
+		if(args.length == 0){
+			System.out.println("You enter an argument.");
+			return;
+		}
         File file = new File(args[0]);
+		if (!file.isDirectory()){
+			System.out.println("No such directory");
+		}
 
 		readTxt(file);
 
@@ -15,21 +22,34 @@ public class ReadTxtFile {
 
     public static void readTxt(File fileNew){
 
-        if(fileNew.canRead() && fileNew.isFile() && fileNew.getName().endsWith(".txt")){
+		if(!fileNew.exists() ){
+			System.out.println("Error, not file found");
+			return;
+		}
 
-            try (BufferedReader reader = new BufferedReader(new FileReader(fileNew))){
+        if(!fileNew.canRead()){
+			System.out.println("Error, file cannot access...");
+		}
 
-                String readingFile;
 
-                while((readingFile = reader.readLine()) != null){
+		if(!fileNew.getName().endsWith(".txt")) {
+			System.out.println("Error. Wrong extension file.");
+		}
 
-                    System.out.println(readingFile);
+		try (BufferedReader reader = new BufferedReader(new FileReader(fileNew))){
 
-                }
+			String readingFile;
 
-            }catch (IOException e) {
-                System.out.println("Error reading file..."+e.getMessage());
-            }
-        }
+			while((readingFile = reader.readLine()) != null){
+
+				System.out.println(readingFile);
+
+			}
+
+		}catch (IOException e) {
+
+			System.out.println("Error reading file..."+e.getMessage());
+
+		}
     }
 }
