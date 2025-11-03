@@ -21,7 +21,7 @@ public class RecursiveWriteFile {
 
             }
         };
-		String outPutPath = new File("resources/outPutList.txt").getAbsolutePath();
+		File outPutPath = new File("resources/outPutList.txt");
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(outPutPath))) {
 
 
